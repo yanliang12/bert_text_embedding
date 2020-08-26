@@ -2,7 +2,7 @@
 
 Embedding a text to a vector by pre-trained BERT word embeddings and pooling layers
 
-<img src="https://raw.githubusercontent.com/gaoyuanliang/bert_text_embedding/master/WX20200826-115118%402x.png" width="800">
+<img src="https://github.com/gaoyuanliang/bert_text_embedding/blob/master/bert_text_embedding_similarity.gif" width="800">
 
 
 ## Instillation 
