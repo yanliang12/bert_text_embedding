@@ -16,5 +16,9 @@ unzip wwm_uncased_L-24_H-1024_A-16.zip
 ## Usage
 
 ```python
+from jessica_text_embedding import text_embedding
 
+x1 = text_embedding(u"Abu Dhabi Finance")
+x2 = text_embedding(u"Dubai Islam Bank")
+x3 = text_embedding(u"This is a negative")
 ```
