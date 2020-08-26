@@ -1,3 +1,16 @@
+###########jessica_text_embedding.py###########
+'''
+https://storage.googleapis.com/bert_models/2019_05_30/wwm_uncased_L-24_H-1024_A-16.zip
+
+https://storage.googleapis.com/bert_models/2019_05_30/wwm_cased_L-24_H-1024_A-16.zip
+
+https://github.com/CyberZHG/keras-bert/blob/e9ccba8ed56b52102bfd08fd231bf9b79d7e0e3e/keras_bert/util.py#L34
+
+tensorflow==2.2.0
+keras==2.4.3
+keras_bert==0.86.0
+'''
+
 import numpy as np
 from keras_bert import *
 from keras.models import Model
@@ -36,3 +49,4 @@ def text_embedding(input):
 		return text_emb[0].tolist()
 	except:
 		return None
+###########jessica_text_embedding.py###########
