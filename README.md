@@ -32,9 +32,11 @@ check the imbedding vector and the length of the vector
 2048
 ```
 
-check the similarity between ```x1``` and ```x2``` measured by the dot-product
+check the similarity of ```(x1,x2)``` and ```(x1,x3)``` measured by the dot-product
 
 ```python
 >>> numpy.dot(numpy.array(x1), numpy.array(x2))
 626.4380145019333
+>>> numpy.dot(numpy.array(x1), numpy.array(x3))
+591.97747068839
 ```
