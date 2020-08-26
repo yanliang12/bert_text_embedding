@@ -46,3 +46,9 @@ check the similarity of ```(x1,x2)``` and ```(x1,x3)``` measured by the dot-prod
 >>> numpy.dot(numpy.array(x1), numpy.array(x3))
 591.97747068839
 ```
+
+## TODO
+
+Building more layers on top of the embedding of words to train these layers by supervision of similar/dissimilar pairs of texts.
+
+If you are working on similar projects, I am happy to help. Contact me by gaoyuanliang@outlook.com
