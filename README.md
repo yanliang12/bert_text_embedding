@@ -15,6 +15,8 @@ unzip wwm_uncased_L-24_H-1024_A-16.zip
 
 ## Usage
 
+Within one line of code, you can convert a text to a list of 2048 numbers. We call this list the embedding vector.
+
 ```python
 >>> import numpy 
 >>> from jessica_text_embedding import text_embedding
