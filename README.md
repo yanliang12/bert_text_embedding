@@ -35,7 +35,7 @@ Within one line of code, you can convert a text to a list of 2048 numbers. We ca
 check the imbedding vector and the length of the vector
 
 ```python
->> print(x1)
+>>> print(x1)
 [0.01866205781698227, 0.20125442743301392, -0.2105996310710907, -0.5797083973884583, 0.5044286847114563, -0.00011515617370605469, -0.9871041178703308, 0.45565372705459595,..., 1.3363279104232788]
 >>> len(x1)
 2048
