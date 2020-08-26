@@ -26,3 +26,13 @@ outputs = Concatenate(name='Concatenate')(outputs)
 model_sentence_emb = Model(
 	inputs=model.inputs, 
 	outputs=outputs)
+
+def text_embedding(input):
+	try:
+		word_idx = np.array([[token_dict[token] for token in tokenizer.tokenize(input)]])
+		word_idx = pad_sequences(word_idx, maxlen = 512)
+		segments = np.zeros(word_idx.shape)
+		text_emb = model_sentence_emb.predict([word_idx, segments])
+		return text_emb[0].tolist()
+	except:
+		return None
