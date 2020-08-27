@@ -52,7 +52,7 @@ check the similarity of ```(x1,x2)``` and ```(x1,x3)``` measured by the dot-prod
 
 The similarity between ```"Abu Dhabi Finance"``` and ```"Dubai Islam Bank"``` is largher than its similarity to ```"This is a negative"```. Since these three texts have no overlapping words at all, why ```"Abu Dhabi Finance"``` is more similar to ```"Dubai Islam Bank"``` than ```"This is a negative"```? Because the BERT word embedding has the semantic similarities. 
 
-## Docker image of REST API for text embedding service
+## REST API Docker of text embedding service
 
 build docker image
 
