@@ -19,14 +19,6 @@ wget https://storage.googleapis.com/bert_models/2019_05_30/wwm_uncased_L-24_H-10
 unzip wwm_uncased_L-24_H-1024_A-16.zip
 ```
 
-to use the docker images as service
-
-```bash
-docker run -it -p 5573:9000 --memory="256g" [YOUR DOCKER IMAGE ID]
-```
-
-then go to the browser and check http://localhost:5573/
-
 ## Usage
 
 Within one line of code, you can convert a text to a list of 2048 numbers. We call this list the embedding vector.
@@ -60,20 +52,25 @@ check the similarity of ```(x1,x2)``` and ```(x1,x3)``` measured by the dot-prod
 
 The similarity between ```"Abu Dhabi Finance"``` and ```"Dubai Islam Bank"``` is largher than its similarity to ```"This is a negative"```. Since these three texts have no overlapping words at all, why ```"Abu Dhabi Finance"``` is more similar to ```"Dubai Islam Bank"``` than ```"This is a negative"```? Because the BERT word embedding has the semantic similarities. 
 
-## Building docker image of REST API for text embedding service
+## Docker image of REST API for text embedding service
+
+build docker image
 
 ```bash
 git clone https://github.com/gaoyuanliang/bert_text_embedding.git
 cd bert_text_embedding
 docker build -t jessica_text_embedding:1.0.1 .
 ```
-run the docker
+
+run the docker image
 
 ```bash
 docker run -it -p 5573:9000 --memory="256g" [DOCKER IMAGE ID]
 ```
 
 check the service at http://localhost:5573/
+
+<img src="https://raw.githubusercontent.com/gaoyuanliang/bert_text_embedding/master/text_embedding_rest_api_docker_demo.gif" width="800">
 
 ## TODO
 
