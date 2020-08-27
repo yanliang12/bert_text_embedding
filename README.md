@@ -72,6 +72,4 @@ docker build -t jessica_text_embedding:1.0.1 .
 
 Building more layers on top of the embedding of words to train these layers by supervision of similar/dissimilar pairs of texts.
 
-Building a REST API docker image to provide text to embedding vector conversion as a service. 
-
 If you are working on similar projects, I am happy to help. Contact me by gaoyuanliang@outlook.com
