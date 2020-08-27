@@ -1,12 +1,12 @@
-# Text embedding for text similarity based on BERT pre-trained word embedding
+# Text embedding based on pre-trained BERT model
 
 Embedding a text to a vector by pre-trained BERT word embeddings and pooling layers
+
+Using the ebedding vectors of two texts to measure the their similarity, by the dot-product of the two vectors
 
 <img src="https://github.com/gaoyuanliang/bert_text_embedding/blob/master/bert_text_embedding_similarity.gif" width="600">
 
 <img src="https://raw.githubusercontent.com/gaoyuanliang/bert_text_embedding/master/WX20200826-115118%402x.png" width="800">
-
-
 
 ## Instillation 
 
