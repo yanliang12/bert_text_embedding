@@ -32,7 +32,7 @@ Within one line of code, you can convert a text to a list of 2048 numbers. We ca
 >>> x3 = text_embedding(u"This is a negative")
 ```
 
-check the imbedding vector and the length of the vector
+check the embedding vector and the length of the vector
 
 ```python
 >>> print(x1)
@@ -50,7 +50,7 @@ check the similarity of ```(x1,x2)``` and ```(x1,x3)``` measured by the dot-prod
 591.97747068839
 ```
 
-The similarity between ```"Abu Dhabi Finance"``` and ```"Dubai Islam Bank"``` is largher than its similarity to ```"This is a negative"```. Since these three texts have no overlapping words at all, why ```"Abu Dhabi Finance"``` is more similar to ```"Dubai Islam Bank"``` than ```"This is a negative"```? Because the BERT word embedding has the semantic similariies. 
+The similarity between ```"Abu Dhabi Finance"``` and ```"Dubai Islam Bank"``` is largher than its similarity to ```"This is a negative"```. Since these three texts have no overlapping words at all, why ```"Abu Dhabi Finance"``` is more similar to ```"Dubai Islam Bank"``` than ```"This is a negative"```? Because the BERT word embedding has the semantic similarities. 
 
 ## TODO
 
