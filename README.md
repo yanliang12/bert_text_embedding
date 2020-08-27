@@ -73,7 +73,7 @@ run the docker
 docker run -it -p 5573:9000 --memory="256g" [DOCKER IMAGE ID]
 ```
 
-check the service at 
+check the service at http://localhost:5573/
 
 ## TODO
 
