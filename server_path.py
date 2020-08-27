@@ -5,6 +5,9 @@ import argsparser
 from flask_restplus import *
 from flask import *
 
+import numpy 
+from jessica_text_embedding import text_embedding
+
 ns = Namespace('jessica', description='')
 args = argsparser.prepare_args()
 
@@ -16,6 +19,7 @@ jessica_api_req = ns.model('jessica_req_fields', req_fields)
 
 rsp_fields = {
 	'embedding_vector': fields.List(fields.Float),
+	'embedding_vector_dim':fields.Integer,
 	'error':fields.String,
 	'running_time':fields.Float
 	}
@@ -33,7 +37,8 @@ class jessica_api(Resource):
 		try:			
 			args = parser.parse_args()		
 			output = {}
-			output['embedding_vector'] = [1.1,2.2]
+			output['embedding_vector_dim'] = 2048
+			output['embedding_vector'] = text_embedding(args['text'])
 			output['error'] = 'success'
 			output['running_time'] = float(time.time()- start)
 			return output, 200
