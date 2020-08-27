@@ -19,6 +19,14 @@ wget https://storage.googleapis.com/bert_models/2019_05_30/wwm_uncased_L-24_H-10
 unzip wwm_uncased_L-24_H-1024_A-16.zip
 ```
 
+to use the docker images as service
+
+```bash
+docker run -it -p 5573:9000 --memory="256g" [YOUR DOCKER IMAGE ID]
+```
+
+then go to the browser and check http://localhost:5573/
+
 ## Usage
 
 Within one line of code, you can convert a text to a list of 2048 numbers. We call this list the embedding vector.
