@@ -11,18 +11,16 @@ args = argsparser.prepare_args()
 parser = ns.parser()
 parser.add_argument('text', type=str, location='json')
 
-req_fields = {'text': fields.String(\
-	example = u"Abu Dhabi Finance")\
-	}
-jessica_api_req = ns.model('jessica', req_fields)
+req_fields = {'text': fields.String(example = u"Abu Dhabi Finance")}
+jessica_api_req = ns.model('jessica_req_fields', req_fields)
 
-rsp_fields = {\
-	'embedding_vector': fields.List(fields.Float),\
-	'error':fields.String,\
-	'running_time':fields.Float\
+rsp_fields = {
+	'embedding_vector': fields.List(fields.Float),
+	'error':fields.String,
+	'running_time':fields.Float
 	}
 
-jessica_api_rsp = ns.model('jessica', rsp_fields)
+jessica_api_rsp = ns.model('jessica_rsp_fields', rsp_fields)
 
 @ns.route('/bert_text_embedding')
 class jessica_api(Resource):
