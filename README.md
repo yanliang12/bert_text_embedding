@@ -69,6 +69,11 @@ docker build -t jessica_text_embedding:1.0.1 .
 ```
 run the docker
 
+```bash
+docker run -it -p 5573:9000 --memory="256g" [DOCKER IMAGE ID]
+```
+
+check the service at 
 
 ## TODO
 
