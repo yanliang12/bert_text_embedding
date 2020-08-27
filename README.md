@@ -67,6 +67,8 @@ git clone https://github.com/gaoyuanliang/bert_text_embedding.git
 cd bert_text_embedding
 docker build -t jessica_text_embedding:1.0.1 .
 ```
+run the docker
+
 
 ## TODO
 
