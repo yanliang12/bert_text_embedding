@@ -76,4 +76,4 @@ check the service at http://localhost:5573/
 
 Building more layers on top of the embedding of words to train these layers by supervision of similar/dissimilar pairs of texts.
 
-If you are working on similar projects, I am happy to help. Contact me by gaoyuanliang@outlook.com
+If you are working on similar projects, I am happy to help. Contact me by yanliang.kaust@gmail.com
